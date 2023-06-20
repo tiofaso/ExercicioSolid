@@ -1,9 +1,173 @@
-<mxfile host="app.diagrams.net" modified="2023-06-20T12:01:26.393Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36" version="21.4.0" etag="vF20vNdyOtppVAeWzLF_" type="github">
+<mxfile host="app.diagrams.net" modified="2023-06-20T12:39:40.878Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36" etag="o5gfel5GnMGZiKBvOA-I" version="21.4.0" type="github">
   <diagram name="Page-1" id="vLhh3yerYi3Mmsl4roQH">
-    <mxGraphModel>
+    <mxGraphModel dx="2150" dy="770" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="MePsB11YgRdylaqGBsov-1" value="Pessoas" style="swimlane;whiteSpace=wrap;html=1;dashed=1;" vertex="1" parent="1">
+          <mxGeometry x="-69" y="20" width="200" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="MePsB11YgRdylaqGBsov-12" value="&lt;b&gt;- double&lt;/b&gt; salario&lt;br&gt;&lt;b&gt;- String&lt;/b&gt; nome&lt;br&gt;&lt;b&gt;- String&lt;/b&gt; cpf&lt;br&gt;&lt;b&gt;- int&lt;/b&gt; numRegistro&lt;br&gt;&lt;b&gt;- String&lt;/b&gt; lotacao&lt;br&gt;&lt;b&gt;- double&lt;/b&gt; bolsa&lt;br&gt;&lt;b&gt;- String &lt;/b&gt;senioridade" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;" vertex="1" parent="MePsB11YgRdylaqGBsov-1">
+          <mxGeometry x="9" y="60" width="121" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="MePsB11YgRdylaqGBsov-13" value="&lt;b&gt;+ abstract&lt;/b&gt; aumentasalario" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;" vertex="1" parent="MePsB11YgRdylaqGBsov-1">
+          <mxGeometry x="9" y="120" width="141" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="MePsB11YgRdylaqGBsov-18" value="&lt;b&gt;- String&lt;/b&gt; nome&lt;br&gt;&lt;b&gt;- String&lt;/b&gt; cpf&lt;br&gt;&lt;b&gt;- int&lt;/b&gt; numRegistro&lt;br&gt;&lt;b&gt;- String&lt;/b&gt; lotacao&lt;br&gt;&lt;b&gt;- double&lt;/b&gt; bolsa" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;" vertex="1" parent="MePsB11YgRdylaqGBsov-1">
+          <mxGeometry x="238" y="315" width="121" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="MePsB11YgRdylaqGBsov-47" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.25;entryY=1;entryDx=0;entryDy=0;endArrow=block;endFill=0;" edge="1" parent="1" source="MePsB11YgRdylaqGBsov-2" target="MePsB11YgRdylaqGBsov-13">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="-190" y="240" />
+              <mxPoint x="-25" y="240" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="MePsB11YgRdylaqGBsov-2" value="Funcionarios" style="swimlane;whiteSpace=wrap;html=1;dashed=1;" vertex="1" parent="1">
+          <mxGeometry x="-290" y="290" width="200" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="MePsB11YgRdylaqGBsov-45" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=1;entryDx=0;entryDy=0;endArrow=block;endFill=0;" edge="1" parent="1" source="MePsB11YgRdylaqGBsov-3" target="MePsB11YgRdylaqGBsov-13">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="260" y="240" />
+              <mxPoint x="81" y="240" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="MePsB11YgRdylaqGBsov-3" value="Temporarios" style="swimlane;whiteSpace=wrap;html=1;dashed=1;" vertex="1" parent="1">
+          <mxGeometry x="160" y="290" width="200" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="MePsB11YgRdylaqGBsov-53" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="MePsB11YgRdylaqGBsov-4">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="260" y="460" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="MePsB11YgRdylaqGBsov-4" value="Estagiarios" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="160" y="490" width="200" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="MePsB11YgRdylaqGBsov-52" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.704;entryY=1.093;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="MePsB11YgRdylaqGBsov-5" target="MePsB11YgRdylaqGBsov-8">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="30" y="590" />
+              <mxPoint x="-158" y="590" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="MePsB11YgRdylaqGBsov-5" value="Professores" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-70" y="620" width="200" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="MePsB11YgRdylaqGBsov-23" value="&lt;b&gt;- String &lt;/b&gt;nivelGraduacao&lt;br&gt;&lt;b&gt;- String&lt;/b&gt;&amp;nbsp;disciplinaMinistrada&lt;br&gt;&lt;b&gt;- int&amp;nbsp;&lt;/b&gt;&amp;nbsp;quantidadeAlunos&lt;br&gt;&lt;b&gt;- int&lt;/b&gt; quantidadeTurmas" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;" vertex="1" parent="MePsB11YgRdylaqGBsov-5">
+          <mxGeometry x="10" y="40" width="170" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="MePsB11YgRdylaqGBsov-24" value="&lt;b&gt;+ void&lt;/b&gt;&amp;nbsp;aumentaSalario (10%)&lt;br&gt;&lt;b&gt;+ void&lt;/b&gt; adicionaTurma&lt;br&gt;&lt;b&gt;+ void&lt;/b&gt; meuEstagiario" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;" vertex="1" parent="MePsB11YgRdylaqGBsov-5">
+          <mxGeometry x="9" y="107" width="141" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="MePsB11YgRdylaqGBsov-25" value="" style="endArrow=none;html=1;rounded=0;entryX=1;entryY=0.75;entryDx=0;entryDy=0;exitX=0;exitY=0.75;exitDx=0;exitDy=0;" edge="1" parent="MePsB11YgRdylaqGBsov-5">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint y="94" as="sourcePoint" />
+            <mxPoint x="200" y="94" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="MePsB11YgRdylaqGBsov-26" value="&lt;b&gt;- String &lt;/b&gt;professoresSupervisionados" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;" vertex="1" parent="MePsB11YgRdylaqGBsov-5">
+          <mxGeometry x="-210" y="20" width="170" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="MePsB11YgRdylaqGBsov-27" value="" style="endArrow=none;html=1;rounded=0;entryX=1;entryY=0.75;entryDx=0;entryDy=0;exitX=0;exitY=0.75;exitDx=0;exitDy=0;" edge="1" parent="MePsB11YgRdylaqGBsov-5">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="-220" y="54" as="sourcePoint" />
+            <mxPoint x="-20" y="54" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="MePsB11YgRdylaqGBsov-28" value="&lt;b&gt;+ void&lt;/b&gt;&amp;nbsp;aumentaSalario (5%)&lt;br&gt;&lt;b&gt;+ void&lt;/b&gt; adicionaProfessor" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;" vertex="1" parent="MePsB11YgRdylaqGBsov-5">
+          <mxGeometry x="-211" y="63" width="141" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="MePsB11YgRdylaqGBsov-29" value="&lt;b&gt;- String &lt;/b&gt;funcaoAdministrativa" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;" vertex="1" parent="MePsB11YgRdylaqGBsov-5">
+          <mxGeometry x="-430" y="20" width="170" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="MePsB11YgRdylaqGBsov-31" value="" style="endArrow=none;html=1;rounded=0;entryX=1;entryY=0.75;entryDx=0;entryDy=0;exitX=0;exitY=0.75;exitDx=0;exitDy=0;" edge="1" parent="MePsB11YgRdylaqGBsov-5">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="-440" y="54" as="sourcePoint" />
+            <mxPoint x="-240" y="54" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="MePsB11YgRdylaqGBsov-32" value="&lt;b&gt;+ void&lt;/b&gt;&amp;nbsp;aumentaSalario (10%)" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;" vertex="1" parent="MePsB11YgRdylaqGBsov-5">
+          <mxGeometry x="-431" y="57" width="141" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="MePsB11YgRdylaqGBsov-43" value="&lt;b&gt;- String &lt;/b&gt;meuProfessor" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;" vertex="1" parent="MePsB11YgRdylaqGBsov-5">
+          <mxGeometry x="10" y="234" width="170" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="MePsB11YgRdylaqGBsov-51" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="MePsB11YgRdylaqGBsov-6" target="MePsB11YgRdylaqGBsov-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="MePsB11YgRdylaqGBsov-6" value="Coordenadores" style="swimlane;whiteSpace=wrap;html=1;startSize=23;" vertex="1" parent="1">
+          <mxGeometry x="-290" y="620" width="200" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="MePsB11YgRdylaqGBsov-50" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.279;entryY=0.977;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="MePsB11YgRdylaqGBsov-7" target="MePsB11YgRdylaqGBsov-8">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="-410" y="590" />
+              <mxPoint x="-222" y="590" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="MePsB11YgRdylaqGBsov-7" value="Administrativos" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-510" y="620" width="200" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="MePsB11YgRdylaqGBsov-8" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-264" y="485" width="150" height="35.5" as="geometry" />
+        </mxCell>
+        <mxCell id="MePsB11YgRdylaqGBsov-48" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.643;entryY=0.995;entryDx=0;entryDy=0;entryPerimeter=0;endArrow=oval;endFill=0;" edge="1" parent="1" source="MePsB11YgRdylaqGBsov-9">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-190.33699999999988" y="434.85" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="-190" y="461" />
+              <mxPoint x="-190" y="461" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="MePsB11YgRdylaqGBsov-9" value="Interface &lt;b&gt;AdminFunc&lt;/b&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-254" y="487.75" width="130" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="MePsB11YgRdylaqGBsov-10" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="185" y="422.25" width="150" height="35.5" as="geometry" />
+        </mxCell>
+        <mxCell id="MePsB11YgRdylaqGBsov-49" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=oval;endFill=0;" edge="1" parent="1" source="MePsB11YgRdylaqGBsov-11">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="260" y="395" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="MePsB11YgRdylaqGBsov-11" value="Interface &lt;b&gt;AdminTemp&lt;/b&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="195" y="425" width="130" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="MePsB11YgRdylaqGBsov-14" value="" style="endArrow=none;html=1;rounded=0;entryX=1;entryY=0.75;entryDx=0;entryDy=0;exitX=0;exitY=0.75;exitDx=0;exitDy=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="-69" y="144" as="sourcePoint" />
+            <mxPoint x="131" y="144" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="MePsB11YgRdylaqGBsov-15" value="&lt;b&gt;- double&lt;/b&gt; salario&lt;br&gt;&lt;b&gt;- String&lt;/b&gt; nome&lt;br&gt;&lt;b&gt;- String&lt;/b&gt; cpf&lt;br&gt;&lt;b&gt;- int&lt;/b&gt; numRegistro&lt;br&gt;&lt;b&gt;- String&lt;/b&gt; lotacao&lt;br&gt;&lt;b&gt;- String &lt;/b&gt;senioridade" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="-281" y="338" width="121" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="MePsB11YgRdylaqGBsov-16" value="&lt;b&gt;+ abstract&lt;/b&gt; aumentasalario" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="-281" y="400" width="141" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="MePsB11YgRdylaqGBsov-17" value="" style="endArrow=none;html=1;rounded=0;entryX=1;entryY=0.75;entryDx=0;entryDy=0;exitX=0;exitY=0.75;exitDx=0;exitDy=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="-290" y="404" as="sourcePoint" />
+            <mxPoint x="-90" y="404" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="MePsB11YgRdylaqGBsov-21" value="&lt;b&gt;- int&lt;/b&gt; professorOrientador" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="169" y="516" width="141" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="MePsB11YgRdylaqGBsov-56" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=0;" edge="1" parent="1" source="MePsB11YgRdylaqGBsov-33">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="31" y="770" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="MePsB11YgRdylaqGBsov-33" value="Turma" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-69" y="830" width="200" height="60" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
